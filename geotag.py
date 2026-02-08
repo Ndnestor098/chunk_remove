@@ -7,10 +7,20 @@ import piexif
 
 def get_place_from_filename(filename: str) -> str:
     """
-    "Jardín_Floridablanca_1.jpg" -> "Jardín_Floridablanca"
+    Soporta:
+    - "Jardín_Floridablanca_1.jpg" -> "Jardín_Floridablanca"
+    - "Parque_nacional_Acquestorte (1).jpg" -> "Parque_nacional_Acquestorte"
+    - "Parque_nacional_Acquestorte (10).jpg" -> "Parque_nacional_Acquestorte"
     """
     stem = Path(filename).stem
-    return re.sub(r'_\d+$', '', stem)
+
+    # 1) quitar sufijo tipo " (1)" o " (10)"
+    stem = re.sub(r"\s*\(\d+\)$", "", stem)
+
+    # 2) quitar sufijo tipo "_1" o "_10"
+    stem = re.sub(r"_\d+$", "", stem)
+
+    return stem.strip()
 
 
 def deg_to_dms_rational(deg_float: float):

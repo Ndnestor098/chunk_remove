@@ -34,5 +34,13 @@
     "Parc_Sant_Jordi": {
         "lat": 41.1595544,
         "lon": 1.1070311
+    },
+    "Parque_nacional_Acquestorte": {
+        "lat": 42.5668493,
+        "lon": 0.9247501
+    },
+    "Parque_nacional_Doñana": {
+        "lat": 37.0427289,
+        "lon": -6.4344467
     }
 }
