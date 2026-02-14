@@ -23,7 +23,7 @@
         "lat": 40.415258,
         "lon": -3.6834657
     },
-    "Jardín_San Francisco": {
+    "Jardín_San_Francisco": {
         "lat": 42.5933191,
         "lon": -5.5715167
     },
@@ -42,5 +42,17 @@
     "Parque_nacional_Doñana": {
         "lat": 37.0427289,
         "lon": -6.4344467
+    },
+    "Playa_Illa_Roja": {
+        "lat": 41.977897,
+        "lon": 3.2100731
+    },
+    "Palacio_Artes_Reina_Sofía": {
+        "lat": 39.458036,
+        "lon": -0.3559392
+    },
+    "Parque_Grande_José_Antonio_Labordeta": {
+        "lat": 41.6330573,
+        "lon": -0.8955496000000001
     }
 }
